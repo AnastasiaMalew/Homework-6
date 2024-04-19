@@ -57,16 +57,15 @@ public class Main {
             int saving = 29000;
             int total1 = 0;
             for (int i = 1; i < 12; i++) {
-                total1 = total1 + total1 / 100;
-                total1 = total1 + saving;
+                total1 += total1 * 0.01 + saving;
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей");
             }
         }
 
         {System.out.println("Задание 10.");
             int number = 2;
-            for (int j = 1; j <= 10; j++) {
-                System.out.println(number + "*" + j + "=" + number * j);
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(number + "*" + i + "=" + number * i);
             }
         }
     }
